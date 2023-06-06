@@ -14,6 +14,7 @@ git clone https://github.com/PetarPoposki/EmbedSocialRepo
 4. Install the required dependencies:
 
 (If you want to run in a separate environment, the next 3 lines are optional)
+
 python -m venv env
 
 source env/bin/activate (for Mac/Linux)
