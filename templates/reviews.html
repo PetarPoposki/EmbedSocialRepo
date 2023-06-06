@@ -1,0 +1,43 @@
+<form method="GET">
+    <label for="text_filter">Text:</label>
+    <select name="text_filter" id="text_filter">
+        <option value="">--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+
+    <label for="rating_filter">Rating:</label>
+    <select name="rating_filter" id="rating_filter">
+        <option value="">--</option>
+        <option value="Highest First">Highest First</option>
+        <option value="Lowest First">Lowest First</option>
+    </select>
+
+    <label for="date_filter">Date:</label>
+    <select name="date_filter" id="date_filter">
+        <option value="">--</option>
+        <option value="Newest First">Newest First</option>
+        <option value="Oldest First">Oldest First</option>
+    </select>
+
+    <label for="minimum_rating">Minimum Rating:</label>
+    <select name="minimum_rating" id="minimum_rating">
+        <option value="">--</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
+
+    <button type="submit">Apply Filters</button>
+</form>
+
+{% for review in reviews %}
+    <div>
+        <h3>{{ review.reviewFullText }}</h3>
+        <p>Rating: {{ review.rating }}</p>
+        <p>Date: {{ review.reviewCreatedOn }}</p>
+        <!-- Display other review details as needed -->
+    </div>
+{% endfor %}
