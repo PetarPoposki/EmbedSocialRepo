@@ -2,7 +2,7 @@ import json
 from django.shortcuts import render
 
 # Load reviews data from the reviews.json file
-with open('../reviews.json') as f:
+with open('reviews.json') as f:
     reviews_data = json.load(f)
 
 def filter_reviews(request):
