@@ -12,6 +12,7 @@ git clone https://github.com/PetarPoposki/EmbedSocialRepo
 3. Navigate to the project directory
 
 4. Install the required dependencies:
+
 python -m pip install django
 
 python -m venv env
