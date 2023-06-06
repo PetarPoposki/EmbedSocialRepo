@@ -13,9 +13,13 @@ git clone https://github.com/PetarPoposki/EmbedSocialRepo
 
 4. Install the required dependencies:
 python -m pip install django
+
 python -m venv env
+
 source env/bin/activate (for Mac/Linux)
+
 env\Scripts\activate (for Windows) (you need to enable powershell script execution "set-executionpolicy unrestricted" on elevated Powershell.exe)
+
 
 5. Run the local server:
 python manage.py runserver
